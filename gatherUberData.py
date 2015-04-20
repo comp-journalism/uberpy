@@ -66,7 +66,7 @@ def gather_loop():
 		# increment the token num so that we use the next server key next time
 		tokennum = tokennum + 1
 
-	# Initiate both requests
+	# Initiate both requests in parallel
 	grequests.map(async_action_items)
 
 
